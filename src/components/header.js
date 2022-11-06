@@ -14,7 +14,7 @@ function Header(){
                 BlogSite.com
             </div>
             <div>
-                Entertainment | Wildlife | Photography | Coding
+                Entertainment | Wildlife | Photography | Code | Contact us
             </div>
         </div>
         </>
