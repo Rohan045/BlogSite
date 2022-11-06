@@ -14,6 +14,7 @@ function Header(){
                 BlogSite.com
             </div>
             <p>Hello World!!</p>
+            <p>Hello World!! 2</p>
             <div className='button'>
                 <h1><button onClick={changeColor}>Press</button></h1>
             </div>
