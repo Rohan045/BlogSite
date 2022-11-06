@@ -13,6 +13,7 @@ function Header(){
             <div className='logo' style={{color : `${colors[color]}`}}>
                 BlogSite.com
             </div>
+            <p>Hello World!!</p>
             <div className='button'>
                 <h1><button onClick={changeColor}>Press</button></h1>
             </div>
