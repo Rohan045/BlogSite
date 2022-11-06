@@ -1,5 +1,5 @@
 import '../css/header.css';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 
 function Header(){
     const [color,setColor] = useState(0);
@@ -10,13 +10,11 @@ function Header(){
     return(
         <>
         <div className='header-body'>
-            <div className='logo' style={{color : `${colors[color]}`}}>
+            <div className='logo' style={{color : `${colors[color]}`}} onClick={changeColor}>
                 BlogSite.com
             </div>
-            <p>Hello World!!</p>
-            <p>Hello World!! 2</p>
-            <div className='button'>
-                <h1><button onClick={changeColor}>Press</button></h1>
+            <div>
+                Entertainment | Wildlife | Photography | Coding
             </div>
         </div>
         </>
