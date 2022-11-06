@@ -5,7 +5,7 @@ function Header(){
     const [color,setColor] = useState(0);
     const colors = ["white","green","red","purple","yellow"];
     const changeColor = () => {
-        setColor((color + 1) % colors.length - 1);
+        setColor((color + 1) % colors.length);
     }
     return(
         <>
