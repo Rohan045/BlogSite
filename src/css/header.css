@@ -1,14 +1,12 @@
 .header-body{
-    height: 115px;
+    height: 118px;
     background-color: #BCEAD5;
+    background-image: linear-gradient(to left,rgb(58, 175, 179),rgb(186, 238, 15));
 }
 
 .logo{
     font-size: 50px;
     font-weight: bolder;
-    background-image: linear-gradient(to right,black,white,black,white,black, white);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
 }

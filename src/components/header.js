@@ -6,6 +6,10 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import {useState} from 'react';
 import CodingTab from './codingTab';
+import CodeIcon from '@mui/icons-material/Code';
+import MovieIcon from '@mui/icons-material/Movie';
+import PetsIcon from '@mui/icons-material/Pets';
+import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
 function Header(){
     const [value, setValue] = useState(0);
@@ -46,11 +50,11 @@ function Header(){
             <div className='tabs'>
             <Box sx={{ width: '100%' }}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                    <Tab label="Coding" {...a11yProps(0)} />
-                        <Tab label="Entertainment" {...a11yProps(1)} />
-                        <Tab label="Wildlife" {...a11yProps(2)} />
-                        <Tab label="Photography" {...a11yProps(3)} />
+                    <Tabs value={value} onChange={handleChange} xaria-label="basic tabs example">
+                        <Tab sx={{minHeight:"47px"}} icon = {<CodeIcon/>} iconPosition="start" label="Coding" {...a11yProps(0)} />
+                        <Tab sx={{minHeight:"47px"}} icon = {<MovieIcon/>} iconPosition = "start" label="Entertainment" {...a11yProps(1)}/>
+                        <Tab sx={{minHeight:"47px"}} icon = {<PetsIcon/>} iconPosition = "start" label="Wildlife" {...a11yProps(2)} />
+                        <Tab sx={{minHeight:"47px"}} icon = {<CameraAltIcon/>} iconPosition = "start"label="Photography" {...a11yProps(3)} />
                     </Tabs>
                 </Box>
                 <TabPanel value={value} index={0}>
