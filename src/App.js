@@ -1,7 +1,7 @@
 import './App.css';
-import { BrowserRouter , Switch, Route } from "react-router-dom";
-import Footer from './components/Footer';
-import HeaderTest from './components/HeaderTest';
+import { BrowserRouter , Routes, Route } from "react-router-dom";
+// import Footer from './components/Footer';
+import HeaderTest from './components/Header';
 import Home from './components/Home';
 import CodingTab from './components/codingTab';
 import Entertainment from './components/Entertainment';
@@ -12,13 +12,14 @@ function App() {
     <div>
       <BrowserRouter>
         <HeaderTest />
-        <Switch>
-          <Route exact path="/" component={Home}></Route>
-          <Route path="/codingtab" component={CodingTab}></Route>
-          <Route path="/entertainment" component={Entertainment}></Route>
-          <Route path="/wildlife" component={WildLife}></Route>
-          <Route path="/photography" component={Photography}></Route>
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Home/>} />
+          <Route path="/codingtab" element={<CodingTab/>} />
+          <Route path="/entertainment" element={<Entertainment/>} />
+          <Route path="/wildlife" element={<WildLife/>} />
+          <Route path="/photography" element={<Photography/>} />
+          <Route path="/contactus" element={<h1>Busy call back later</h1>} />
+        </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
     </div>
