@@ -15,24 +15,12 @@ const HeaderTest = () => {
               <ul className="navbar-nav ms-auto">
                 <nav className="shift">
                   <ul>
-                    <li>
-                      <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                      <Link to="/codingtab"><CodeIcon/>Coding</Link>
-                    </li>
-                    <li>
-                      <Link to="/entertainment"><MovieIcon/>Entertainment</Link>
-                    </li>
-                    <li>
-                    <Link to="wildlife"><PetsIcon/>WildLife</Link>
-                    </li>
-                    <li>
-                    <Link to="/photography"><CameraAltIcon/>Photography</Link>
-                    </li>
-                    <li>
-                      <Link to="/contactus"><CallIcon/>Contact Us</Link>
-                    </li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/codingtab"><CodeIcon/> Coding</Link></li>
+                    <li><Link to="/entertainment"><MovieIcon/> Entertainment</Link></li>
+                    <li><Link to="/wildlife"><PetsIcon/> WildLife</Link></li>
+                    <li><Link to="/photography"><CameraAltIcon/> Photography</Link></li>
+                    <li><Link to="/contactus"><CallIcon/> Contact Us</Link></li>
                   </ul>
                 </nav>
               </ul>
