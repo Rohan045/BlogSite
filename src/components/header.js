@@ -1,13 +1,28 @@
 import "../css/HeaderTest.css";
-import { Link } from "react-router-dom";
+import {useState} from 'react';
 import CodeIcon from '@mui/icons-material/Code';
 import MovieIcon from '@mui/icons-material/Movie';
 import PetsIcon from '@mui/icons-material/Pets';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import CallIcon from '@mui/icons-material/Call';
+import MenuPop from "./popOver";
+
 const HeaderTest = () => {
+    const [anchorEl, setAnchorEl] = useState(null);
+
+    const handleClick = (event) => {
+      setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+      setAnchorEl(null);
+    };
+
+    const open = Boolean(anchorEl);
+    const id = open ? 'simple-popover' : undefined;
     return (
       <div>
+        <MenuPop open = {open} id = {id} handleClose = {handleClose} anchorEl = {anchorEl}/>
         <nav className="navbar navbar-expand-lg navbar-light bg">
           <div className="container-fluid">
             <div className="logo">BlogSite.com</div>  
@@ -15,12 +30,12 @@ const HeaderTest = () => {
               <ul className="navbar-nav ms-auto">
                 <nav className="shift">
                   <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/codingtab"><CodeIcon/> Coding</Link></li>
-                    <li><Link to="/entertainment"><MovieIcon/> Entertainment</Link></li>
-                    <li><Link to="/wildlife"><PetsIcon/> WildLife</Link></li>
-                    <li><Link to="/photography"><CameraAltIcon/> Photography</Link></li>
-                    <li><Link to="/contactus"><CallIcon/> Contact Us</Link></li>
+                    <li>Home</li>
+                    <li aria-describedby={id} onClick={handleClick}><CodeIcon/> Coding</li>
+                    <li><MovieIcon/> Entertainment</li>
+                    <li><PetsIcon/> WildLife</li>
+                    <li><CameraAltIcon/> Photography</li>
+                    <li><CallIcon/> Contact Us</li>
                   </ul>
                 </nav>
               </ul>
