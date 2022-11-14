@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
+import {Link} from 'react-router-dom';
 
 function MenuPop(props) {
   return (
@@ -17,7 +18,7 @@ function MenuPop(props) {
       >
         <Typography sx={{ p: 2 }}>
             <ul>
-              <li>Dynamic Programming</li>
+              <li><Link to='/dynamicprogramming'>Dynamic Programming</Link></li>
               <li>Graphs</li>
               <li>Greedy Algirthms</li>
               <li>Binary Tree</li>

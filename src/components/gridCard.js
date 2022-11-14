@@ -8,7 +8,7 @@ function GridCard(props) {
     return (
         <div className="gridcard-body">
              <Card>
-                <CardContent sx={{ minWidth: 275,maxWidth: 300,minHeight: 100,maxHeight: 300 }}>
+                <CardContent sx={{ minWidth: 300,maxWidth: 300,minHeight: 150,maxHeight: 150 }}>
                     <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                         {props.title}
                     </Typography>
