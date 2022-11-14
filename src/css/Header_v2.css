@@ -1,0 +1,12 @@
+.header-body{
+    height: 118px;
+    background-color: #BCEAD5;
+    background-image: linear-gradient(to left,rgb(58, 175, 179),rgb(186, 238, 15));
+}
+
+.logo{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+}

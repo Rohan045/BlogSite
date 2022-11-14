@@ -16,7 +16,14 @@ function MenuPop(props) {
         }}
       >
         <Typography sx={{ p: 2 }}>
-            The content of the Popover.
+            <ul>
+              <li>Dynamic Programming</li>
+              <li>Graphs</li>
+              <li>Greedy Algirthms</li>
+              <li>Binary Tree</li>
+              <li>Sorting</li>
+              <li>Searching</li>
+            </ul>
         </Typography>
       </Popover>
     </div>
