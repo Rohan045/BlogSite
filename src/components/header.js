@@ -1,4 +1,4 @@
-import "../css/HeaderTest.css";
+import "../css/Header.css";
 import {useState} from 'react';
 import CodeIcon from '@mui/icons-material/Code';
 import MovieIcon from '@mui/icons-material/Movie';
@@ -29,10 +29,10 @@ const HeaderTest = () => {
             <div className="collapse navbar-collapse " id="navbarTogglerDemo02">
               <ul className="navbar-nav ms-auto">
                 <nav className="shift">
-                  <ul>
+                  <ul> 
                     <li>Home</li>
                     <li aria-describedby={id} onClick={handleClick}><CodeIcon/> Coding</li>
-                    <li><MovieIcon/> Entertainment</li>
+                    <li aria-describedby={id} onClick={handleClick}><MovieIcon/> Entertainment</li>
                     <li><PetsIcon/> WildLife</li>
                     <li><CameraAltIcon/> Photography</li>
                     <li><CallIcon/> Contact Us</li>

@@ -13,12 +13,12 @@ function App() {
       <BrowserRouter>
         <HeaderTest />
         <Routes>
-          <Route exact path="/" element={<Home/>} />
+          {/* <Route exact path="/" element={<Home/>} />
           <Route path="/codingtab" element={<CodingTab/>} />
           <Route path="/entertainment" element={<Entertainment/>} />
           <Route path="/wildlife" element={<WildLife/>} />
           <Route path="/photography" element={<Photography/>} />
-          <Route path="/contactus" element={<h1>Busy call back later</h1>} />
+          <Route path="/contactus" element={<h1>Busy call back later</h1>} /> */}
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
