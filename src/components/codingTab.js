@@ -6,7 +6,7 @@ import { Container } from '@mui/system';
 
 function CodingTab() {
     return(
-        <div className="coding-body" style={{border: '0.5rem solid #908be9'}}>
+        <div className="coding-body" style={{border: '0.5rem solid #908be9',minHeight:"526px"}}>
             <Container disableGutters maxWidth="xl" sx={{minHeight:"50px",backgroundColor:"#c3c1f9",color:"white"}}>
                 <Box>
                     <h2>Related Blogs:-</h2>

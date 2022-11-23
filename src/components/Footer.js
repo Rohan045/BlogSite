@@ -1,30 +1,12 @@
-function Footer() {
-    return(
-        <div style={{paddingTop : "10px"}}>
-            <p>
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
+import { Container } from "@mui/system";
 
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            footer footer footer footer
-            
+function Footer(){
+    return(
+        <Container disableGutters maxWidth="xl" sx={{backgroundColor:"#908be9",minHeight:"128px"}}>
+            <p>
+                CopyRight by RohanDeep ©️.
             </p>
-        </div>
+        </Container>
     );
 }
 

@@ -1,10 +1,7 @@
 const Home = () => {
     return (
-      <div>
-        <deep/>
-        <rohan/>
-        <deep/>
-        <deep/>
+      <div style={{minHeight:"526px"}}>
+        
       </div>
     );
   };

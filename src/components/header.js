@@ -7,13 +7,12 @@ import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import CallIcon from '@mui/icons-material/Call';
 import MenuPop from "./popOver";
 
-const HeaderTest = () => {
+const Header = () => {
     const [anchorEl, setAnchorEl] = useState(null);
 
     const handleClick = (event) => {
       setAnchorEl(event.currentTarget);
     };
-
     const handleClose = () => {
       setAnchorEl(null);
     };
@@ -30,9 +29,9 @@ const HeaderTest = () => {
               <ul className="navbar-nav ms-auto">
                 <nav className="shift">
                   <ul> 
-                    <li>Home</li>
+                    <li><a href="/">Home</a></li>
                     <li aria-describedby={id} onClick={handleClick}><CodeIcon/> Coding</li>
-                    <li aria-describedby={id} onClick={handleClick}><MovieIcon/> Entertainment</li>
+                    <li><MovieIcon/> Entertainment</li>
                     <li><PetsIcon/> WildLife</li>
                     <li><CameraAltIcon/> Photography</li>
                     <li><CallIcon/> Contact Us</li>
@@ -46,4 +45,4 @@ const HeaderTest = () => {
     );
   };
   
-  export default HeaderTest;
+  export default Header;
